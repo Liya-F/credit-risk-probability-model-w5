@@ -1,6 +1,8 @@
-# Credit Scoring - Business Understanding
+This project aims to build a Credit Scoring Model to enable a Buy-Now-Pay-Later (BNPL) service for customers of a partnering eCommerce company by assessing creditworthiness and predicting default risk, thereby supporting smarter loan approvals in line with Basel II Capital Accord guidelines. It involves assigning quantitative risk scores based on customers’ historical transaction and behavioral data. Leveraging eCommerce transactional data, the project focuses on feature engineering, predictive model development, and deployment of a scalable credit risk assessment service.
 
-## 1. Basel II’s Requirement for Interpretability and Documentation
+## Credit Scoring - Business Understanding
+
+### 1. Basel II’s Requirement for Interpretability and Documentation
 
 Basel II introduces a framework where banks using internal models must ensure transparency, documentation, and proper governance. Under the Internal Ratings-Based (IRB) approach, banks estimate risk components like Probability of Default (PD), Exposure at Default (EAD), and Loss Given Default (LGD). These components must be derived using models that are interpretable and verifiable.
 
@@ -8,7 +10,7 @@ Regulators (e.g., HKMA and World Bank) emphasize the importance of models that a
 
 Models that cannot be explained to risk committees or regulators are not suitable for regulated financial environments.
 
-## 2. Necessity and Risks of Using a Proxy Default Label
+### 2. Necessity and Risks of Using a Proxy Default Label
 
 When real default data is not available, it is common to use a proxy label to enable supervised learning. For example, a user becoming inactive, having negative balances, or account closure within a given period can serve as a proxy for default.
 
@@ -20,7 +22,7 @@ However, creating a proxy label introduces several risks:
 
 To mitigate these risks, it is important to carefully define the proxy, test it for correlation with true business outcomes, and validate it across different customer segments.
 
-## 3. Trade-off Between Logistic Regression + WoE and Gradient Boosting Models
+### 3. Trade-off Between Logistic Regression + WoE and Gradient Boosting Models
 
 **Logistic Regression + Weight of Evidence (WoE)**
 
