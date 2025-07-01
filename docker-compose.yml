@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  credit-risk-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src  # Optional: live reload with local code changes
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
