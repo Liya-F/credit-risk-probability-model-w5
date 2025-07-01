@@ -1,0 +1,8 @@
+mlflow
+pytest
+fastapi
+uvicorn[standard]
+pydantic
+mlflow
+scikit-learn
+flake8
